@@ -40,7 +40,7 @@ const getCreditCardIssuer = (ccType) => {
   return ccType;
 };
 
-const getCreditCardBrand = (creditCardNumber) => {
+export const getCreditCardBrand = (creditCardNumber) => {
   // start without knowing the credit card brand
   var result = 'unknown';
 
