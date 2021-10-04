@@ -40,18 +40,18 @@ const locale = availableLanguageOrDefault(navigator.language.toLowerCase().split
 const forcedServices =
   process.env.NODE_ENV === 'development' || process.env.REACT_APP_IS_DEMO_ENABLED
     ? {
-        dopplerLegacyClient: new HardcodedDopplerLegacyClient(),
-        dopplerSitesClient: new HardcodedDopplerSitesClient(),
+        //dopplerLegacyClient: new HardcodedDopplerLegacyClient(),
+        //dopplerSitesClient: new HardcodedDopplerSitesClient(),
         datahubClient: new HardcodedDatahubClient(),
         shopifyClient: new HardcodedShopifyClient(),
         dopplerApiClient: new HardcodedDopplerApiClient(),
         ipinfoClient: new HardcodedIpinfoClient(),
         dopplerBillingApiClient: new HardcodedDopplerBillingApiClient(),
         bigQueryClient: new HardcodedBigQueryClient(),
-        dopplerUserApiClient: new HardcodedDopplerUserApiClient(),
+        //dopplerUserApiClient: new HardcodedDopplerUserApiClient(),
         dopplerContactPolicyApiClient: new HardcodedDopplerContactPolicyApiClient(),
-        staticDataClient: new HardcodedStaticDataClient(),
-        dopplerBillingUserApiClient: new HardcodedDopplerBillingUserApiClient(),
+        //staticDataClient: new HardcodedStaticDataClient(),
+        //dopplerBillingUserApiClient: new HardcodedDopplerBillingUserApiClient(),
         dopplerAccountPlansApiClient: new HardcodedDopplerAccountPlansApiClient(),
       }
     : {};

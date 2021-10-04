@@ -318,7 +318,7 @@ export const PurchaseSummary = InjectAppServices(
       const result = await dopplerBillingUserApiClient.purchase({
         planId: state.plan.id,
         discountId: state.discount?.id,
-        total: 500,
+        total:state.amountDetails.total,
       });
 
       setError(!result.success);
